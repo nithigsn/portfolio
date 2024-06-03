@@ -44,7 +44,7 @@ export default function Portfolio(){
           <a href="https://github.com/nithigsn" target="_blank">
             <i className="fa-brands fa-github" style={{ color: "#fffbfb" }} />
           </a>
-          <a href="www.linkedin.com/in/nithish-kumar-gs/" target="_blank">
+          <a href="www.linkedin.com/in/nithish-kumar-6b199514b/" target="_blank">
             <i className="fa-brands fa-linkedin" style={{ color: "#ffffff" }} />
           </a>
         </div>
@@ -256,10 +256,10 @@ export default function Portfolio(){
       <a href="https://github.com/nithigsn" target="_blank">
         <i className="fa-brands fa-github" style={{ color: "#fffbfb" }} />
       </a>
-      <a href="www.linkedin.com/in/nithish-kumar-gs/" target="_blank">
+      <a href="www.linkedin.com/in/nithish-kumar-6b199514b" target="_blank">
         <i className="fa-brands fa-linkedin" style={{ color: "#ffffff" }} />
       </a>
-      <a href="" target="_blank">
+      <a href="https://www.instagram.com/nitty_gsn/" target="_blank">
         <i className="fa-brands fa-instagram " style={{ color: "#ffffff" }} />
       </a>
     </div>
