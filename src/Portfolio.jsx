@@ -2,7 +2,8 @@ import ContactPage from "./Pages/ContactPage";
 import EducationandExperience from "./Pages/EducationandExperiencePage";
 import HomePage from "./Pages/HomePage";
 import ProjectPage from "./Pages/ProjectPage";
-import Skills from "./Pages/Skills";
+import SkillsPage from "./Pages/SkillsPage";
+
 
 export default function Portfolio(){
   return(
@@ -11,9 +12,9 @@ export default function Portfolio(){
     <HomePage/>
     <ProjectPage/>
     <EducationandExperience/>
-    <Skills/>
+    <SkillsPage/>
     <ContactPage/>
-    
+
     </>
   );
 }
