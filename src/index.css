@@ -212,7 +212,7 @@ h2 {
 
 .todo-project-img {
     width: 80%;
-    height: 200px;
+    height: 100px;
     background-image: url(./Assets/todo.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -223,7 +223,7 @@ h2 {
 
 .ncs-project-img {
     width: 80%;
-    height: 200px;
+    height: 100px;
     background-image: url(./Assets/player.png);
     background-size: cover;
     background-repeat: no-repeat;
