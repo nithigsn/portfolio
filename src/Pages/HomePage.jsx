@@ -47,7 +47,7 @@ export default function HomePage() {
                             <a href="https://github.com/nithigsn" >
                                 <i className="fa-brands fa-github" style={{ color: "#fffbfb" }} />
                             </a>
-                            <a href="www.linkedin.com/in/nithish-kumar-gs/" >
+                            <a href="https://linkedin.com/in/nithish-kumar-gs/" >
                                 <i className="fa-brands fa-linkedin" style={{ color: "#ffffff" }} />
                             </a>
                         </div>
