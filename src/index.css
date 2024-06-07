@@ -441,22 +441,24 @@ form button:hover {
 /* Footer */
 footer {
     height: 10vh;
+    width:100vw ;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.427);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     text-align: center;
-    padding: 20px;
 }
 
 .footer-nav {
+    margin-top: 10px;
     display: flex;
     justify-content: space-around;
 
 }
 
 .links {
+    margin-top: 10px;
     display: flex;
     justify-content: space-around;
 }
