@@ -9,6 +9,7 @@ export default function Portfolio(){
   return(
 
     <>
+    
     <HomePage/>
     <ProjectPage/>
     <EducationandExperience/>
