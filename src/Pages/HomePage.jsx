@@ -2,7 +2,7 @@ export default function HomePage() {
     return (
 
 
-        <>
+        
             
             <div className="home" id="section1">
                 <header>
@@ -59,7 +59,7 @@ export default function HomePage() {
                     </div>
                 </main>
             </div>
-        </>
+        
 
 
     );

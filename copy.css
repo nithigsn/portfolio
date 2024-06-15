@@ -1,3 +1,17 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
@@ -7,37 +21,20 @@ body {
     color: white;
     background-color: black;
     font-family: poppins;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 a {
     text-decoration: none;
     color: white;
-
 }
 
-
-/* -------------------------Scroll Bar */
-/* For WebKit-based browsers */
-::-webkit-scrollbar {
-    width: 12px;
-    /* Width of the scrollbar */
-}
-
-/* Handle (thumb) of the scrollbar */
-::-webkit-scrollbar-thumb {
-    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
-}
-
-
-/* -----------------------------------Home Page */
 .home {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-color: #17161a;
 }
 
+/* header */
 header {
     display: flex;
     justify-content: space-between;
@@ -67,15 +64,19 @@ header {
     transition: 0.5s ease-in-out;
 }
 
+
+/* Main */
+
 main {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 91vh;
-    width: 100%;
+    width: 100vw;
 
 }
 
+/* Profile Picture */
 .profile-picture {
     height: 300px;
     width: 300px;
@@ -105,16 +106,14 @@ main {
     background: linear-gradient(to bottom right, #2EC9CC 36%, #f4f4f4 30%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-.btn-profile{
-    display: flex;
-    height: 30px;
-    width: 100%;
-    align-items: center;
+
+
+
 }
 
 .btn-profile a {
     display: inline-block;
+    text-decoration: none;
     background: rgb(2, 0, 36);
     background: linear-gradient(333deg, rgba(2, 0, 36, 1) 0%, rgba(85, 57, 141, 1) 2%, rgba(106, 9, 121, 1) 16%, rgba(0, 255, 222, 1) 97%);
     height: 20px;
@@ -123,7 +122,6 @@ main {
     padding: 2px;
     border-radius: 10px;
     margin-right: 10px;
-    align-items: center;
 
 }
 
@@ -134,20 +132,19 @@ main {
 }
 
 .res {
-    display: flex;
     margin-top: 20px;
     width: 165px;
     height: 30px;
     cursor: pointer;
+    color: #fff;
     font-size: 12px;
     border-radius: 1rem;
     border: none;
     position: relative;
+    background: #000000;
     transition: 0.1s;
     align-items: center;
-    justify-content: center;
-    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
-   
+    text-align: center;
 }
 
 .res::after {
@@ -168,37 +165,82 @@ main {
     background: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
     transition: 0.5s;
 }
-.res a{
-    color: black;
+
+
+
+/* Scroll Bar */
+/* For WebKit-based browsers */
+::-webkit-scrollbar {
+    width: 8px;
+    /* Width of the scrollbar */
 }
+
+/* Handle (thumb) of the scrollbar */
+::-webkit-scrollbar-thumb {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+}
+
 
 
 
 /* ------------------------------ Project Page -------------------------------------- */
 
 .project-page {
-    height: 119vh;
-    width: 100%;
+    height: 98vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-   
 
 }
 
 h2 {
     text-align: center;
-    margin-top: 5px;
+    height: 1vh;
 
 }
 
 .project-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 90vh;
     width: 80vw;
     gap: 10px;
+
+}
+
+.todo-project-img {
+    width: 80%;
+    height: 150px;
+    background-image: url(./Assets/todo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+
+}
+
+.ncs-project-img {
+    width: 80%;
+    height: 150px;
+    background-image: url(./Assets/player.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+}
+
+.project-container button {
+    width: 80px;
+    height: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(333deg, rgba(2, 0, 36, 1) 0%, rgba(85, 57, 141, 1) 2%, rgba(106, 9, 121, 1) 16%, rgba(0, 255, 222, 1) 97%);
+    color: white;
+    margin-top: 20px;
 
 }
 
@@ -213,42 +255,13 @@ h2 {
 
 }
 
-.todo-project-img {
-    width: 80%;
-    height: 150px;
-    background-image: url(./Assets/todo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-}
-
-.ncs-project-img {
-    width: 80%;
-    height: 150px;
-    background-image: url(./Assets/player.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-
-}
-
 .about-project {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 15px;
+    font-size: 12px;
 }
 
-.project-container button {
-    width: 80px;
-    height: 20px;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(333deg, rgba(2, 0, 36, 1) 0%, rgba(85, 57, 141, 1) 2%, rgba(106, 9, 121, 1) 16%, rgba(0, 255, 222, 1) 97%);
-    color: white;
-}
 
 .todo-project:hover {
     transform: scale(0.9) rotate(3deg);
@@ -263,13 +276,13 @@ h2 {
 
 }
 
+
+
 /* --------------------------  Education Page ----------------------------------- */
-
-
 
 .edu-container {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-color: #17161a;
     align-items: center;
     display: flex;
@@ -283,7 +296,7 @@ h2 {
     justify-content: space-around;
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
-
+    margin-top: 30px;
     padding: 20px;
 
 }
@@ -301,6 +314,8 @@ h2 {
     width: 30px;
     border-radius: 50%;
     margin-top: 10px;
+
+
 
 }
 
@@ -320,10 +335,6 @@ h2 {
 
 }
 
-.content p {
-    font-size: 15px;
-}
-
 .content {
     flex: 2;
 }
@@ -334,144 +345,14 @@ h2 {
     transition: 0.5s;
 }
 
-/* ---------------------------------------Skills Page   -------------------------------------*/
-.skill-two {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.skillbar-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 70vh;
-    width: 80vh;
-    background-color: rgba(128, 128, 128, 0.23);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 20px;
-    margin-top: 30px;
-}
 
-.bar {
-    margin: 10px;
-}
 
-.bar .info {
-    margin-bottom: 5px;
-}
 
-.info span {
-    opacity: 0;
-    animation: showText 0.5s 1s linear forwards;
-
-}
-
-@keyframes showText {
-    100% {
-        opacity: 1;
-    }
-
-}
-
-.progress-line-html,
-.progress-line-css,
-.progress-line-js,
-.progress-line-react,
-.progress-line-node,
-.progress-line-express,
-.progress-line-mongo,
-.progress-line-git {
-    height: 4px;
-    width: 100%;
-    background-color: white;
-    position: relative;
-    transform: scaleX(0);
-    transform-origin: left;
-    border-radius: 8px;
-    box-shadow: inset 0 1px 1px black,
-        0px 1px white;
-    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-
-}
-
-@keyframes animate {
-    100% {
-        transform: scaleX(1);
-    }
-}
-
-.p-line span {
-    height: 110%;
-    position: absolute;
-    border-radius: 8px;
-    cursor: pointer;
-
-}
-
-.html {
-    width: 100%;
-    background-color: rgb(255, 0, 0);
-    box-shadow: 0 0 15px rgb(255, 0, 21);
-    transition: 0.3s ease;
-
-}
-
-.css {
-    width: 100%;
-    background-color: rgb(0, 17, 255);
-    box-shadow: 0 0 15px rgb(34, 5, 178);
-    transition: 0.3s ease;
-}
-
-.js {
-    width: 85%;
-    background-color: gold;
-    box-shadow: 0 0 15px gold;
-    transition: 0.3s ease;
-}
-
-.react {
-    width: 90%;
-    background-color: rgb(0, 170, 255);
-    box-shadow: 0 0 15px rgb(0, 157, 255);
-    transition: 0.3s ease;
-}
-
-.node {
-    width: 95%;
-    background-color: rgb(30, 193, 15);
-    box-shadow: 0 0 15px rgb(5, 177, 63);
-    transition: 0.3s ease;
-}
-
-.express {
-    width: 90%;
-    background-color: rgb(169, 18, 91);
-    box-shadow: 0 0 15px rgb(176, 5, 136);
-    transition: 0.3s ease;
-}
-
-.mongo {
-    width: 90%;
-    background-color: rgb(1, 255, 30);
-    box-shadow: 0 0 15px rgb(0, 251, 17);
-    transition: 0.3s ease;
-}
-
-.git {
-    width: 100%;
-    background-color: rgb(180, 227, 12);
-    box-shadow: 0 0 15px rgb(180, 227, 12);
-    transition: 0.3s ease;
-}
 
 /* -----------------------Contact Page ----------------------- */
 .contact-container {
-    width: 100%;
+    width: 100vw;
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -492,13 +373,13 @@ form {
 }
 
 .contact-form {
-    width: 100%;
+    width: 100vw;
 }
 
 .contact {
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
+    width: 100vw;
 }
 
 input {
@@ -554,10 +435,13 @@ form button:hover {
     transition: 0.5s;
 }
 
+
+
+
 /* Footer */
 footer {
     height: 10vh;
-    width: 100%;
+    width:100vw ;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.427);
     display: flex;
@@ -578,6 +462,8 @@ footer {
     display: flex;
     justify-content: space-around;
 }
+
+
 
 
 /* Responsive */
@@ -603,15 +489,6 @@ footer {
         font-size: 8px;
     }
 
-    .project-page {
-        height: 100vh;
-    }
-
-    .about-project button {
-        height: 20px;
-        font-size: 10px;
-    }
-
     .todo-project-img,
     .ncs-project-img {
         height: 50px;
@@ -632,7 +509,7 @@ footer {
     }
 
     .line {
-        height: 70px;
+        height: 80px;
         margin-left: 10px;
     }
 
@@ -640,7 +517,10 @@ footer {
         width: 85vw;
     }
 
-
+    .skill-container {
+        height: 200px;
+        width: 300px;
+    }
 
     .contact,
     .footer-nav {
@@ -648,51 +528,135 @@ footer {
     }
 
     button {
-        height: 15px;
-
+        height: 30px;
+        width: fit-content;
     }
 
-    .edu-container {
-        height: 100vh;
+
+}
+
+
+
+
+
+/* Skills Page   */
+.skill-two {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillbar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    width: 80vh;
+    background-color: rgba(128, 128, 128, 0.23);
+    backdrop-filter: blur(10px); 
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 30px;
+}
+.bar{
+    margin: 10px;
+}
+.bar .info{
+    margin-bottom: 5px;
+}
+.info span{
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+
+}
+@keyframes showText {
+    100%{
+        opacity: 1;
     }
 
-    .wrap {
-        height: 100px;
-    }
+}
+.progress-line-html,
+.progress-line-css,
+.progress-line-js,
+.progress-line-react,
+.progress-line-node,
+.progress-line-express,
+.progress-line-mongo,
+.progress-line-git{
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 1px black,
+                       0px 1px white;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;                   
 
-    .content p {
-        font-size: 7px;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
     }
+}
 
-    .skill-two {
-        height: 100vh;
-        width: 100vw;
 
-    }
+.p-line span{
+    height: 110%;
+    position: absolute;
+    border-radius: 8px;
+    cursor: pointer;
 
-    .skillbar-container {
-        height: 65vh;
-        width: 70vw;
-    }
+}
+.html{
+    width: 100%;
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0 0 15px rgb(255, 0, 21);
+    transition: 0.3s ease;
 
-    .info span {
-        font-size: 12px;
-    }
-
-    form button {
-        height: 25px;
-    }
-
-    .btn-profile{
-        justify-content: center;
-    }
-    .btn-profile a{
-        height: 15px;
-    }
-    .res{
-        height: 25px;
-    }
-    .icon i{
-        font-size: 12px;
-    }
+}
+.css{
+    width: 100%;
+    background-color: rgb(0, 17, 255);
+    box-shadow: 0 0 15px rgb(34, 5, 178);
+    transition: 0.3s ease;
+}
+.js{
+    width: 85%;
+    background-color: gold;
+    box-shadow: 0 0 15px gold;
+    transition: 0.3s ease;
+}
+.react{
+    width: 90%;
+    background-color: rgb(0, 170, 255);
+    box-shadow: 0 0 15px rgb(0, 157, 255);
+    transition: 0.3s ease;
+}
+.node{
+    width: 95%;
+    background-color: rgb(30, 193, 15);
+    box-shadow: 0 0 15px rgb(5, 177, 63);
+    transition: 0.3s ease;
+}
+.express{
+    width: 90%;
+    background-color: rgb(169, 18, 91);
+    box-shadow: 0 0 15px rgb(176, 5, 136);
+    transition: 0.3s ease;
+}
+.mongo{
+    width: 90%;
+    background-color: rgb(1, 255, 30);
+    box-shadow: 0 0 15px rgb(0, 251, 17);
+    transition: 0.3s ease;
+}
+.git{
+    width: 100%;
+    background-color: rgb(180, 227, 12);
+    box-shadow: 0 0 15px rgb(180, 227, 12);
+    transition: 0.3s ease;
 }
