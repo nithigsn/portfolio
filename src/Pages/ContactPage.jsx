@@ -4,28 +4,44 @@ export default function ContactPage() {
         <>
             <div className="contact-container" id="section5">
                 <h2> Contact</h2>
-                <form action="">
-                    <input type="name" placeholder="Name" />
-                    <input type="email" placeholder="E-mail" />
-                    <input type="number" placeholder="Number" />
-                    <input type="text" placeholder="Message" />
+
+
+                <form action="" className="">
+
+                    <div className="form">
+                        <input type="name" placeholder="Name" className="input" />
+                        <span className="input-border"></span>
+                    </div>
+                    <div className="form"> <input type="email" placeholder="E-mail" className="input" />
+                        <span className="input-border"></span></div>
+                    <div className="form"><input type="number" placeholder="Number" className="input" />
+                        <span className="input-border"></span></div>
+                    <div className="form">
+                        <input type="text" placeholder="Message" className="input" />
+                        <span className="input-border"></span>
+                    </div>
+
+
+
+
                     <button>Send</button>
                 </form>
+
+
+
+
                 <div className="contact">
                     <div className="phone">
-                        {" "}
                         <i className="fa-solid fa-phone " style={{ color: "#fafafa" }} />
                         +91 9751552404
                     </div>
                     <div className="mail">
-                        <i className="fa-regular fa-envelope " style={{ color: "#fcfcfc" }} />
-                        <a href="mailto:nithishgsn000@gmail.com">Send Email</a>
+
+                        <a href="mailto:nithishgsn000@gmail.com"><i className="fa-regular fa-envelope " style={{ color: "#fcfcfc" }} />Send Email</a>
                     </div>
                     <div className="instagram">
-                        <i className="fa-brands fa-instagram " style={{ color: "#ffffff" }} />
-                        <a href="" >
-                            instagram
-                        </a>
+
+                        <a href="https://instagram.com/nitty_gsn/?next=%2F" > <i className="fa-brands fa-instagram " style={{ color: "#ffffff" }} />Instagram</a>
                     </div>
                 </div>
             </div>
