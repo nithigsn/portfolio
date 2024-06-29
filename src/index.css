@@ -333,7 +333,9 @@ h2 {
     flex-direction: column;
     align-items: center;
 }
-
+.skill-two h2{
+    margin-top: 40px;
+}
 .skillbar-container {
     display: flex;
     flex-direction: column;
