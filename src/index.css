@@ -110,6 +110,7 @@ main {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .btn-profile {
     display: flex;
 }
@@ -474,8 +475,8 @@ h2 {
 form {
     display: flex;
     flex-direction: column;
-    height: 45vh;
-    width: 70vw;
+    height: 55vh;
+    width: 50vw;
     align-items: center;
     box-shadow: 5px 5px 40px rgb(0, 0, 0);
     border-radius: 10px;
@@ -497,7 +498,7 @@ input {
     outline: none;
     margin-top: 30px;
     color: white;
-    width: 60vw;
+    width: 40vw;
 }
 
 input[type="text"] {
@@ -510,7 +511,7 @@ input[type="text"] {
 
 /* form */
 .form {
-    --width-of-input: 50vw;
+    --width-of-input: 40vw;
     --border-height: 1px;
     --border-before-color: rgba(221, 221, 221, 0.39);
     --border-after-color: #5891ff;
@@ -550,7 +551,7 @@ input:focus~.input-border {
 
 
 form button {
-    margin-top: 30px;
+    margin-top: 60px;
     width: 165px;
     height: 30px;
     cursor: pointer;
@@ -616,22 +617,30 @@ footer {
 @media screen and (max-width: 427px) {
 
     header {
-        font-size: 7px;
+        font-size: 9px;
+        height: 6vh;
+    }
+    .right-nav{
+        justify-content: space-around;
+        margin-right: 20px;
     }
 
-    main {
-        flex-direction: column;
-    }
+ 
 
-    .profile {
+    .profile,.pic-container {
         align-items: center;
         font-size: 10px;
         width: 80vw;
-
+    }
+   
+    main{
+        flex-direction: column;
+        height: 90vh;
+        justify-content: space-around;
     }
 
     p {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .project-page {
@@ -645,7 +654,8 @@ footer {
 
     .todo-project-img,
     .ncs-project-img {
-        height: 50px;
+        width: 300px;
+        height: 70px;
     }
 
     h2 {
@@ -692,7 +702,7 @@ footer {
     }
 
     .content p {
-        font-size: 7px;
+        font-size: 8px;
     }
 
     .skill-two {
@@ -722,61 +732,21 @@ footer {
         height: 15px;
     }
 
-    .res {
-        height: 25px;
-    }
-
+   
     .icon i {
         font-size: 12px;
+    }
+
+    form{
+        height: 40vh;
+        width: 70vw;
+    }
+    form button{
+        margin-top: 50px;
+    }
+    .form{
+        width: 50vw;
     }
 }
 
 /* Responsive for Tabs */
-
-@media screen and (max-width:777px) {
-
-
-    main{
-        justify-content: space-between;
-        width: 100vw;
-    }
-
-    header {
-        font-size: 12px;
-
-    }
-
-    .profile-picture {
-        height: 200px;
-        width: 200px;
-
-    }
-
-    .profile h3,
-    p,
-    h4,
-    .about-project p,
-    .edu-container p,
-    h3,
-    .contact-container a,
-    .phone,
-    footer a {
-        font-size: small;
-    }
-
-    .profile p {
-        line-height: 22px;
-
-    }
-
-    .todo-project-img,
-    .ncs-project-img {
-        height: 100px;
-    }
-
-    h2 {
-        font-size: large;
-    }
-
-
-}

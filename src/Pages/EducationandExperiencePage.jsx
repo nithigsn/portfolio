@@ -22,8 +22,7 @@ export default function EducationandExperience() {
                     <p>
                         Words Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Accusamus, harum. Hic distinctio quod ratione ad harum ducimus sunt
-                        nostrum officia! Laudantium vel laborum voluptates eveniet sequi
-                        quibusdam quod quam laboriosam.
+                
                     </p>
                 </div>
             </div>

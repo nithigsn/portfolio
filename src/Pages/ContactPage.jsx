@@ -80,7 +80,7 @@ export default function ContactPage() {
                     </a>
                 </div>
                 <div className="copyright">
-                    <p>© 2024 NithishKumar.com. All rights reserved.</p>
+                    <p> All rights reserved.</p>
                 </div>
             </footer>
 
