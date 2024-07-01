@@ -252,9 +252,7 @@ main {
     -webkit-text-fill-color: transparent;
 }
 
-.profile p{
-    
-}
+
 .btn-profile {
     display: flex;
 }
@@ -895,4 +893,5 @@ footer {
     }
 }
 
-/* Responsive for Tabs */
+
+
