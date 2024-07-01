@@ -1,10 +1,20 @@
+import { useEffect } from "react";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+
 export default function SkillsPage() {
+    useEffect(()=>{
+        AOS.init({duration:2000});
+    
+       },[])
+
     return (
 
         <div className="skill-two" id="section4">
             <h2>Skills</h2>
 
-            <div className="skillbar-container">
+            <div className="skillbar-container" data-aos='flip-left'>
 
                 <div className="bar">
 

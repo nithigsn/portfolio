@@ -1,11 +1,23 @@
+import { useEffect } from "react";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+
+
 export default function ProjectPage() {
+
+    useEffect(()=>{
+        AOS.init({duration:2000});
+    
+       },[])
+    
     return (
 
        
             <div className="project-page" id="section2">
                 <h2>Projects</h2>
                 <div className="project-container">
-                    <div className="todo-project">
+                    <div className="todo-project" data-aos='fade-right'>
                         <h5>ToDo List</h5>
                         <div className="todo-project-img" />
                         <div className="about-project">
@@ -20,7 +32,7 @@ export default function ProjectPage() {
                             <button>Click Here</button>
                         </div>
                     </div>
-                    <div className="ncs-project">
+                    <div className="ncs-project" data-aos='fade-left'>
                         <h5>NCS Player</h5>
                         <div className="ncs-project-img" />
                         <div className="about-project">

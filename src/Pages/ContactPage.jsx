@@ -1,4 +1,17 @@
+import { useEffect } from "react";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+
 export default function ContactPage() {
+
+
+    useEffect(()=>{
+        AOS.init({duration:2000});
+    
+       },[])
+
+
     return (
 
         <>
@@ -6,7 +19,7 @@ export default function ContactPage() {
                 <h2> Contact</h2>
 
 
-                <form action="" className="">
+                <form action="" className="" data-aos='flip-right'>
 
                     <div className="form">
                         <input type="name" placeholder="Name" className="input" />

@@ -1,4 +1,16 @@
+import { useEffect } from "react";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 export default function HomePage() {
+
+
+   useEffect(()=>{
+    AOS.init({duration:2000});
+
+   },[])
+
+   
     return (
 
 
@@ -30,9 +42,9 @@ export default function HomePage() {
             {/*--------- Main ---------*/}
             <main>
                 <div className="pic-container">
-                    <div className="profile-picture" />
+                    <div className="profile-picture" data-aos='fade-right' />
                 </div>
-                <div className="profile">
+                <div className="profile" data-aos='fade-left'>
                     <h3>I'm Nithish Kumar</h3>
                     <h4>I'm a Full Stack Developer</h4>
                     <p>
