@@ -4,7 +4,9 @@ import 'aos/dist/aos.css'
 
 export default function HomePage() {
 
+   
 
+    //on scroll transitions
    useEffect(()=>{
     AOS.init({duration:2000});
 

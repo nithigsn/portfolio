@@ -1,12 +1,22 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 
 export default function ContactPage() {
 
+    const[name,setName]=useState('');
+    const[number,setNumber]=useState();
+    const[email,setEmail]=useState('');
+    const[messaage,setMessage]=useState("");
 
+
+    
+
+    //on scroll transitions
     useEffect(()=>{
+
+
         AOS.init({duration:2000});
     
        },[])
@@ -22,15 +32,17 @@ export default function ContactPage() {
                 <form action="" className="" data-aos='flip-right'>
 
                     <div className="form">
-                        <input type="name" placeholder="Name" className="input" />
+                        <input type="name" placeholder="Name" className="input" value={name}  onChange={(e)=>setName(e.target.value)}/>
                         <span className="input-border"></span>
                     </div>
-                    <div className="form"> <input type="email" placeholder="E-mail" className="input" />
-                        <span className="input-border"></span></div>
-                    <div className="form"><input type="number" placeholder="Number" className="input" />
+                    <div className="form">
+                        <input type="email" placeholder="E-mail" className="input" value={email} onChange={(e)=>setEmail(e.target.value)}/>
                         <span className="input-border"></span></div>
                     <div className="form">
-                        <input type="text" placeholder="Message" className="input" />
+                        <input type="text" placeholder="Number" className="input" value={number} onChange={(e)=>setNumber(e.target.value)}/>
+                        <span className="input-border"></span></div>
+                    <div className="form">
+                        <input type="text" placeholder="Message" className="input" value={messaage} onChange={(e)=>setMessage(e.target.value)}/>
                         <span className="input-border"></span>
                     </div>
 
