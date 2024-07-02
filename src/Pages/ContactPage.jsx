@@ -49,7 +49,7 @@ export default function ContactPage() {
                 redirect: "follow"
             };
     
-            fetch("http://localhost:3434/user/contact", requestOptions)
+            fetch("https://myportfolio-black-mu-95.vercel.app/user/contact", requestOptions)
                 .then((response) => response.json())
                 .then((result) => console.log(result))
                 .catch((error) => console.error(error));
