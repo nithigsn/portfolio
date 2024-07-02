@@ -5,22 +5,58 @@ import 'aos/dist/aos.css'
 
 export default function ContactPage() {
 
-    const[name,setName]=useState('');
-    const[number,setNumber]=useState();
-    const[email,setEmail]=useState('');
-    const[messaage,setMessage]=useState("");
+    const [name, setName] = useState('');
+    const [number, setNumber] = useState();
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState("");
 
 
-    
+
+
+
+
 
     //on scroll transitions
-    useEffect(()=>{
+    useEffect(() => {
 
 
-        AOS.init({duration:2000});
+        AOS.init({ duration: 2000 });
+
+    }, [])
+
+
+
+
+
+
+    function handleSend() {
+
+        if( name && email && number && message !== ""){
+            const myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/json");
     
-       },[])
+            const raw = JSON.stringify({
+                "name": name,
+                "email": email,
+                "number": number,
+                "message": message
+            });
+    
+            const requestOptions = {
+                method: "POST",
+                headers: myHeaders,
+                body: raw,
+                redirect: "follow"
+            };
+    
+            fetch("http://localhost:3434/user/contact", requestOptions)
+                .then((response) => response.json())
+                .then((result) => console.log(result))
+                .catch((error) => console.error(error));
 
+        }
+       
+    }
 
     return (
 
@@ -32,24 +68,24 @@ export default function ContactPage() {
                 <form action="" className="" data-aos='flip-right'>
 
                     <div className="form">
-                        <input type="name" placeholder="Name" className="input" value={name}  onChange={(e)=>setName(e.target.value)}/>
+                        <input type="name" placeholder="Name" className="input" value={name} onChange={(e) => setName(e.target.value)} />
                         <span className="input-border"></span>
                     </div>
                     <div className="form">
-                        <input type="email" placeholder="E-mail" className="input" value={email} onChange={(e)=>setEmail(e.target.value)}/>
+                        <input type="email" placeholder="E-mail" className="input" value={email} onChange={(e) => setEmail(e.target.value)} />
                         <span className="input-border"></span></div>
                     <div className="form">
-                        <input type="text" placeholder="Number" className="input" value={number} onChange={(e)=>setNumber(e.target.value)}/>
+                        <input type="text" placeholder="Number" className="input" value={number} onChange={(e) => setNumber(e.target.value)} />
                         <span className="input-border"></span></div>
                     <div className="form">
-                        <input type="text" placeholder="Message" className="input" value={messaage} onChange={(e)=>setMessage(e.target.value)}/>
+                        <input type="text" placeholder="Message" className="input" value={message} onChange={(e) => setMessage(e.target.value)} />
                         <span className="input-border"></span>
                     </div>
 
 
 
 
-                    <button>Send</button>
+                    <button onClick={handleSend}>Send</button>
                 </form>
 
 
