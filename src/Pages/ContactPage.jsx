@@ -32,37 +32,34 @@ export default function ContactPage() {
     function handleSend() {
 
         if (name && email && number && message) {
+
+
             const myHeaders = new Headers();
             myHeaders.append("Content-Type", "application/json");
-        
+
             const raw = JSON.stringify({
                 "name": name,
                 "email": email,
                 "number": number,
                 "message": message
             });
-        
+
             const requestOptions = {
                 method: "POST",
                 headers: myHeaders,
                 body: raw,
                 redirect: "follow"
             };
-        
+
             fetch("https://nithishportfolio.vercel.app/user/contact", requestOptions)
-                .then((response) => {
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-                    return response.json();
-                })
+                .then((response) => response.json())
                 .then((result) => console.log(result))
-                .catch((error) => console.error('There was a problem with the fetch operation:', error));
-        } else {
-            console.error('All fields (name, email, number, message) are required and must not be empty.');
+                .catch((error) => console.error(error));
         }
-        
-       
+
+
+
+
     }
 
     return (
