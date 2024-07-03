@@ -82,7 +82,7 @@ export default function ContactPage() {
                         <input type="email" placeholder="E-mail" className="input" value={email} onChange={(e) => setEmail(e.target.value)} />
                         <span className="input-border"></span></div>
                     <div className="form">
-                        <input type="text" placeholder="Number" className="input" value={number} onChange={(e) => setNumber(e.target.value)} />
+                        <input type="phone" placeholder="Number" className="input" value={number} onChange={(e) => setNumber(e.target.value)} />
                         <span className="input-border"></span></div>
                     <div className="form">
                         <input type="text" placeholder="Message" className="input" value={message} onChange={(e) => setMessage(e.target.value)} />

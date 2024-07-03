@@ -766,21 +766,16 @@ footer {
         justify-content: space-around;
         margin-right: 20px;
     }
-
- 
-
     .profile,.pic-container {
         align-items: center;
         font-size: 10px;
         width: 80vw;
     }
-   
     main{
         flex-direction: column;
         height: 90vh;
         justify-content: space-around;
     }
-
     p {
         font-size: 10px;
     }
@@ -880,13 +875,14 @@ footer {
     }
 
     form{
-        height: 40vh;
+        height: 55vh;
         width: 70vw;
-    }
-    form button{
-        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
     .form{
+        margin-top: 0;
         width: 50vw;
     }
 }
