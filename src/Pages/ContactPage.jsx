@@ -72,7 +72,7 @@ export default function ContactPage() {
                 <h2> Contact</h2>
 
 
-                <form action="" className="" data-aos='flip-right'>
+                <form action="post" className="" data-aos='flip-right'>
 
                     <div className="form">
                         <input type="name" placeholder="Name" className="input" value={name} onChange={(e) => setName(e.target.value)} />
