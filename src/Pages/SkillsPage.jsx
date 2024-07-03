@@ -4,10 +4,10 @@ import 'aos/dist/aos.css'
 
 
 export default function SkillsPage() {
-    useEffect(()=>{
-        AOS.init({duration:2000});
-    
-       },[])
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+
+    }, [])
 
     return (
 
