@@ -49,7 +49,7 @@ export default function ContactPage() {
                 redirect: "follow"
             };
         
-            fetch("https://myportfolio-black-mu-95.vercel.app/user/contact", requestOptions)
+            fetch("https://nithishportfolio.vercel.app/user/contact", requestOptions)
                 .then((response) => {
                     if (!response.ok) {
                         throw new Error(`HTTP error! status: ${response.status}`);
