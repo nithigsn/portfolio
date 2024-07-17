@@ -31,7 +31,7 @@ export default function ContactPage() {
 
     function handleSend() {
 
-        if (name && email && number && message) {
+        if (name && email && number && message !== "") {
 
 
             const myHeaders = new Headers();

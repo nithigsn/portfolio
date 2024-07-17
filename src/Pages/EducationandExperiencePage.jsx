@@ -20,8 +20,7 @@ export default function EducationandExperience() {
                 <div className="content">
                     <h3>CMS College Of Commerce and Science</h3>
                     <p>
-                        Words Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Accusamus, harum. Hic distinctio quod ratione ad harum ducimus sunt
+                      Completed My Bsc Computer Science with 69.86% marks. 
                 
                     </p>
                 </div>
@@ -30,7 +29,7 @@ export default function EducationandExperience() {
             <div className="wrap">
                 <div className="timeline">
                     <h3>Freelancing</h3>
-                    <p>April 2024 - Till</p>
+                    <p></p>
                 </div>
                 <div className="center">
                     <div className="icon">
@@ -42,12 +41,9 @@ export default function EducationandExperience() {
                     <div className="line" />
                 </div>
                 <div className="content">
-                    <h3>Full Stack Developer</h3>
+                    <h3>Photo and Video Editor</h3>
                     <p>
-                        Words Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Accusamus, harum. Hic distinctio quod ratione ad harum ducimus sunt
-                        nostrum officia! Laudantium vel laborum voluptates eveniet sequi
-                        quibusdam quod quam laboriosam.
+                       Worked with many clients with 100% satisfied feedbacks.
                     </p>
                 </div>
             </div>
@@ -71,10 +67,9 @@ export default function EducationandExperience() {
                 <div className="content">
                     <h3>Sales Officer</h3>
                     <p>
-                        Words Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Accusamus, harum. Hic distinctio quod ratione ad harum ducimus sunt
-                        nostrum officia! Laudantium vel laborum voluptates eveniet sequi
-                        quibusdam quod quam laboriosam.
+                        Worked as a Sales Officer. Increased Sales Percentag by 37%.
+                        Succesfully closed many deals and
+                        Received Star Performer Award for it.
                     </p>
                 </div>
             </div>
