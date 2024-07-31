@@ -436,7 +436,7 @@ h2 {
 }
 
 .line {
-    position: absolute;
+    position: relative;
     width: 1px;
     height: 120px;
     background-color: white;
