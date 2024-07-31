@@ -50,7 +50,7 @@ export default function HomePage() {
                     <h3>I'm Nithish Kumar</h3>
                     <h4>I'm a Full Stack Developer</h4>
                     <p>
-                        Experienced full stack developer with over 5 years of hands-on
+                        Experienced full stack developer with hands-on
                         experience in designing, developing, and maintaining web applications.
                         Proficient in both front-end and back-end technologies, with a strong
                         understanding of software engineering principles. Adept at
