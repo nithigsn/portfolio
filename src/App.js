@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Portfolio from "./Portfolio";
 import PreLoadingPage from "./Pages/PreLoadingPage";
 import { CSSTransition } from "react-transition-group";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -46,7 +47,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <Analytics>
       <CSSTransition
         in={!isLoading}
         timeout={500}
@@ -56,7 +57,8 @@ function App() {
         <Portfolio data={portfolioData} />
       </CSSTransition>
       {isLoading && <PreLoadingPage />}
-    </div>
+    </Analytics>
+
   );
 }
 
