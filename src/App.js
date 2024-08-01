@@ -47,7 +47,7 @@ function App() {
   }, []);
 
   return (
-    <Analytics>
+    <>
       <CSSTransition
         in={!isLoading}
         timeout={500}
@@ -57,7 +57,8 @@ function App() {
         <Portfolio data={portfolioData} />
       </CSSTransition>
       {isLoading && <PreLoadingPage />}
-    </Analytics>
+    <Analytics/>
+    </>
 
   );
 }
