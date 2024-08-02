@@ -3,6 +3,7 @@ import Portfolio from "./Portfolio";
 import PreLoadingPage from "./Pages/PreLoadingPage";
 import { CSSTransition } from "react-transition-group";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -58,6 +59,7 @@ function App() {
       </CSSTransition>
       {isLoading && <PreLoadingPage />}
     <Analytics/>
+    <SpeedInsights/>
     </>
 
   );
