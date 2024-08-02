@@ -44,7 +44,7 @@ export default function ProjectPage() {
                             experience for users while offering robust functionality and ease of
                             use."
                         </p>
-                        <button>Click Here</button>
+                        <button><a href="https://soniquewave.vercel.app/">Click Here</a></button>
                     </div>
                 </div>
             </div>
