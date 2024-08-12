@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { ShootingStars } from "../components/ui/ShootingStars";
+import { StarsBackground } from '../components/ui/StarsBackground';
 
 export default function HomePage() {
 
@@ -19,7 +21,7 @@ export default function HomePage() {
 
 
         <div className="home" id="section1">
-            <header>
+            <header className="z-10">
                 <div className="name">Nithish Kumar</div>
                 <div className="right-nav">
                     <a href="#section1" className="nav-item">
@@ -42,7 +44,8 @@ export default function HomePage() {
 
 
             {/*--------- Main ---------*/}
-            <main>
+           
+            <main className="">
                 <div className="pic-container">
                     <div className="profile-picture" data-aos='fade-right' />
                 </div>
@@ -82,6 +85,12 @@ export default function HomePage() {
                     </div>
                 </div>
             </main>
+            <ShootingStars />
+            <StarsBackground />
+            
+         
+
+
         </div>
 
 
