@@ -20,33 +20,13 @@ export default function EducationandExperience() {
                 <div className="content">
                     <h3>CMS College Of Commerce and Science</h3>
                     <p>
-                      Completed My Bsc Computer Science with 69.86% marks. 
-                
+                        Completed My Bsc Computer Science with 69.86% marks.
+
                     </p>
                 </div>
             </div>
             <h2>Experience</h2>
-            <div className="wrap">
-                <div className="timeline">
-                    <h3>Freelancing</h3>
-                    <p></p>
-                </div>
-                <div className="center">
-                    <div className="icon">
-                        <i
-                            className="fa-solid fa-briefcase fa-bounce"
-                            style={{ color: "#f7f7f7" }}
-                        />
-                    </div>
-                    <div className="line" />
-                </div>
-                <div className="content">
-                    <h3>Photo and Video Editor</h3>
-                    <p>
-                       Worked with many clients with 100% satisfied feedbacks.
-                    </p>
-                </div>
-            </div>
+            
             <div className="wrap">
                 <div className="timeline">
                     <h3>

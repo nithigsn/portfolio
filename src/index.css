@@ -812,8 +812,11 @@ footer {
     }
 
     .line {
-        height: 70px;
-        margin-left: 10px;
+      position: relative;
+      height: 60px;
+      margin-top: 18px;
+      margin-left: 10px;
+      margin-bottom: 10px;
     }
 
     .wrap {
