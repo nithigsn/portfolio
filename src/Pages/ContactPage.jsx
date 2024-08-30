@@ -102,7 +102,7 @@ export default function ContactPage() {
                     </div>
                     <div className="mail">
 
-                        <a href="mailto:nithishgsn000@gmail.com"><i className="fa-regular fa-envelope " style={{ color: "#fcfcfc" }} />Send Email</a>
+                        <a href="mailto:nithishgsn000@gmail.com?subject=Hello%20Feel%20to%20contact%20me%20!"><i className="fa-regular fa-envelope " style={{ color: "#fcfcfc" }} />Send Email</a>
                     </div>
                     <div className="instagram">
 
